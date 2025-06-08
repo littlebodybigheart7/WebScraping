@@ -42,7 +42,6 @@ function teste(){
 }
 
 function main(){
-    document.querySelector("#btn").addEventListener("click",teste)
     document.querySelector("#btnimg").addEventListener("click",testeImagem)
 }
 window.onload = main
