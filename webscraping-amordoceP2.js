@@ -33,7 +33,6 @@ function teste(){
             if(resp.status != 200){
                 throw new Error("Problemas no servidor")
             }
-            //alert("oi")
             return resp.text()
         })
         .catch(err => {
