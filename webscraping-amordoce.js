@@ -1,6 +1,4 @@
 function extrairNoticia(doc){
-    //document -> nossa página
-    ///doc -> página da Fatec
     let div = document.querySelector("#res")
     doc.querySelectorAll("p.inner-column").forEach(noticia => {
         div.appendChild(noticia)
@@ -43,10 +41,8 @@ function teste(){
         })
 }
 
-
 function main(){
     document.querySelector("#btn").addEventListener("click",teste)
     document.querySelector("#btnimg").addEventListener("click",testeImagem)
-    document.querySelector("#btnus").addEventListener("click",testeus)
 }
 window.onload = main
