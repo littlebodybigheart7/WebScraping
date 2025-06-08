@@ -28,7 +28,7 @@ function testeImagem(){
 
 function teste(){
     //fetch monta uma requisição
-    fetch("https://www.wikiaves.com.br/")
+    fetch("https://amordoce.fandom.com/wiki/Categoria:Respostas")
         .then(resp => {
             if(resp.status != 200){
                 throw new Error("Problemas no servidor")
