@@ -1,9 +1,0 @@
-let oi = document.getElementsByClassName("buttons")
-for(let i=0; i < oi.length; i++){
-    oi[i].style.backgroundColor="purple";
-}
-
-let fatec = document.getElementsByClassName("season-name")
-for(let i=0; i < fatec.length; i++){
-        fatec[i].innerHTML="FATEC";
-}
