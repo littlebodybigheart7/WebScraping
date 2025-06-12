@@ -2,13 +2,15 @@ function baixarImagem(urlimg){
     fetch(urlimg)
         .then(resp =>{
             return resp.blob()
-            //blob = arquivo imagem
         })
         .then(blob => {
             const imageObjectURL = URL.createObjectURL(blob)
             let img = document.createElement("img")
             img.src = imageObjectURL
             document.querySelector("#res").appendChild(img)
+        })
+        catch(err => {
+            document.querySelector("res") = err.message;
         })
 }
 
@@ -19,8 +21,7 @@ function testeImagem(){
     })
 }
 
-function teste(){
-    //fetch monta uma requisição
+function teste (){
     fetch("https://amordoce.fandom.com/wiki/Categoria:Respostas")
         .then(resp => {
             if(resp.status != 200){
