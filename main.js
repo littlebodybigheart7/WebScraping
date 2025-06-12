@@ -1,10 +1,3 @@
-function extrairNoticia(doc){
-    let div = document.querySelector("#res")
-    doc.querySelectorAll("p.inner-column").forEach(noticia => {
-        div.appendChild(noticia)
-    })    
-}
-
 function baixarImagem(urlimg){
     fetch(urlimg)
         .then(resp =>{
